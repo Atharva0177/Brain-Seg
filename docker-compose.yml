@@ -1,0 +1,84 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-brainseg}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-brainseg}
+      POSTGRES_DB: ${POSTGRES_DB:-brainseg}
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  mlflow:
+    build:
+      context: .
+      dockerfile: infrastructure/Dockerfile.mlflow
+    command: >-
+      mlflow server
+      --host 0.0.0.0
+      --port 5000
+      --backend-store-uri postgresql://brainseg:brainseg@postgres:5432/brainseg
+      --default-artifact-root /mlartifacts
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow-artifacts:/mlartifacts
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/version')"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  api:
+    build:
+      context: .
+      dockerfile: infrastructure/Dockerfile.api
+    environment:
+      BRAINSEG_DATABASE_URL: postgresql+psycopg://brainseg:brainseg@postgres:5432/brainseg
+      BRAINSEG_REDIS_URL: redis://redis:6379/0
+      BRAINSEG_MLFLOW_TRACKING_URI: http://mlflow:5000
+      BRAINSEG_ARTIFACT_ROOT: /workspace/artifacts
+      BRAINSEG_MODEL_METADATA: /workspace/artifacts/primary-model.json
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      mlflow:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    volumes:
+      - ${BRAINSEG_ARTIFACT_ROOT:-./artifacts}:/workspace/artifacts:ro
+      - ./data:/workspace/data:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres-data:
+  redis-data:
+  mlflow-artifacts:

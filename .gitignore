@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+kaggle.json
+
+# Dataset, caches, models, reports, and runtime state
+data/*
+!data/.gitkeep
+artifacts/*
+!artifacts/.gitkeep
+mlruns/
+postgres-data/
+redis-data/
+*.nii
+*.nii.gz
+*.pt
+*.pth
+*.onnx
+
+# Frontend
+# IDE and OS files
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+.DS_Store
