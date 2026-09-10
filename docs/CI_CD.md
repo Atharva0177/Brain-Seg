@@ -9,7 +9,7 @@ The `BrainSeg CI` workflow runs:
 - Ruff lint and format checks
 - Mypy type checking
 - The complete 66-test Python suite
-- Release-index and Python syntax validation
+- Release-index template and Python syntax validation
 - Backend-only source checks
 - Docker Compose syntax validation
 - API and MLflow image builds

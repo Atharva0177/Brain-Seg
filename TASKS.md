@@ -144,7 +144,7 @@ Secondary model: baseline 3D U-Net configuration is tracked in `artifacts/baseli
 | BRATS-062 | DONE | Validate complete pipeline execution from a single trigger. | BRATS-051 | Run `962b85524c6a4ee384ff8fdda21a52c5` submitted 3 ordered stages; all completed in PostgreSQL |
 | BRATS-063 | DONE | Validate idempotent rerun behavior and changed-input invalidation. | BRATS-050 | Probe verified first execution accepted, identical payload skipped by content hash, and changed payload re-executed with a new hash |
 | BRATS-064 | DONE | Complete README with setup, citations, architecture, usage, results, and limitations. | BRATS-059 | Detailed README includes Mermaid architecture/data-flow diagrams, metrics, artifact image/chart references, commands, serving, orchestration, citations, and limitations |
-| BRATS-065 | DONE | Capture final portfolio demonstration and link every phase gate artifact. | BRATS-062, BRATS-064 | `docs/DEMO_RUNBOOK.md` and `artifacts/release-index.json` provide the reproducible backend demo sequence and complete automated artifact index |
+| BRATS-065 | DONE | Capture final portfolio demonstration and link every phase gate artifact. | BRATS-062, BRATS-064 | `docs/DEMO_RUNBOOK.md`, `docs/release-index.template.json`, and generated `artifacts/release-index.json` provide the reproducible backend demo sequence and artifact index |
 
 ## Initial Execution Order
 

@@ -6,6 +6,8 @@ from pathlib import Path
 
 def main() -> int:
     index_path = Path("artifacts/release-index.json")
+    if not index_path.exists():
+        index_path = Path("docs/release-index.template.json")
     data = json.loads(index_path.read_text(encoding="utf-8"))
     required = [
         "canonical_model",
@@ -22,7 +24,12 @@ def main() -> int:
         raise RuntimeError(f"Release index missing keys: {missing}")
     print(
         json.dumps(
-            {"status": "passed", "model": data["canonical_model"], "required_keys": len(required)},
+            {
+                "status": "passed",
+                "source": str(index_path),
+                "model": data["canonical_model"],
+                "required_keys": len(required),
+            },
             indent=2,
         )
     )
