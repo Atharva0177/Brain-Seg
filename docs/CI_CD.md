@@ -27,6 +27,7 @@ Run from an activated `brainseg` environment:
 ```powershell
 python -m pip install -r requirements.txt
 python -m pip install optuna celery[redis] redis kaggle SimpleITK scikit-image nibabel
+python -m pip install pytest pytest-cov ruff mypy pre-commit
 ruff check app pipeline scripts tests
 ruff format --check app pipeline scripts tests
 mypy app/api --ignore-missing-imports --follow-imports=skip

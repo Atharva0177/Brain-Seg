@@ -38,6 +38,7 @@ jobs:
           python -m pip install -e '.[dev]' --no-deps
           python -m pip install -r requirements-api.txt
           python -m pip install optuna celery[redis] redis kaggle SimpleITK scikit-image nibabel
+          python -m pip install pytest pytest-cov ruff mypy pre-commit
 
       - name: Ruff lint
         run: ruff check app pipeline scripts tests
