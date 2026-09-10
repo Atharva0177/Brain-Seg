@@ -93,6 +93,7 @@ This document records decisions that affect architecture, reproducibility, scope
 | ADR-077 | Use README Mermaid diagrams and generated artifact references as the primary project architecture/results handoff. | Accepted |
 | ADR-078 | Use GitHub Actions for backend quality/release/Compose CI while keeping dataset download and GPU training manual. | Accepted |
 | ADR-079 | Keep CI CPU/source focused and exclude 42.8 GB data download, GPU training, and generated checkpoint validation from pull-request jobs. | Accepted |
+| ADR-080 | CI installs the complete CPU-test dependency set explicitly while keeping GPU/CUDA training dependencies out of pull-request jobs. | Accepted |
 | ADR-075 | Train the baseline 3D U-Net as a separate comparison model with isolated artifacts; never overwrite the canonical Attention U-Net checkpoint. | Accepted |
 | ADR-061 | Use a read-only subject-slice API with generated output artifacts, avoiding image-storage duplication. | Accepted |
 | ADR-062 | Use the held-out split for backend/CLI inference and generated prediction artifacts. | Accepted |

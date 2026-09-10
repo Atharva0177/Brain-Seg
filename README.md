@@ -70,6 +70,141 @@ flowchart TD
     Train --> Infer --> Eval --> Register
 ```
 
+## Dataset Description
+
+BrainSeg uses **BraTS 2020**, the Multimodal Brain Tumor Segmentation Challenge dataset, from the Kaggle-hosted copy. The dataset contains co-registered, skull-stripped multimodal brain MRI volumes and expert tumor segmentations for the labeled training cohort.
+
+### Composition
+
+| Cohort | Subjects | Files per subject | Segmentation labels |
+|---|---:|---:|---|
+| Labeled training cohort | `369` | 4 MRI + 1 mask | Available |
+| Official validation copy | `125` | 4 MRI | Not publicly available |
+
+The verified download contains:
+
+- `2,345` NIfTI files
+- `4` metadata CSV files
+- `2,349` total files
+- Approximately `42.8 GB` uncompressed storage
+- Raw `.nii` files, not compressed `.nii.gz`
+
+Only the 369 labeled training subjects can be scored locally. BrainSeg creates its own reproducible subject-level split from those subjects:
+
+| Split | Subjects |
+|---|---:|
+| Train | `259` |
+| Validation | `55` |
+| Test | `55` |
+
+The official unlabeled validation copy is excluded from local supervised scoring.
+
+### MRI Modalities
+
+Every labeled subject contains four channels:
+
+| Channel | Sequence |
+|---|---|
+| T1 | Native T1-weighted MRI |
+| T1ce / T1Gd | Post-contrast T1-weighted MRI |
+| T2 | T2-weighted MRI |
+| FLAIR | Fluid-attenuated inversion recovery MRI |
+
+Native volume geometry:
+
+```text
+240 x 240 x 155 voxels
+1 mm x 1 mm x 1 mm isotropic spacing
+```
+
+The pipeline verifies that modalities are readable, aligned, and geometrically compatible before caching or training.
+
+### Segmentation Labels
+
+BraTS uses non-contiguous stored labels:
+
+| Stored value | Meaning |
+|---:|---|
+| `0` | Background |
+| `1` | Necrotic and non-enhancing tumor, NCR/NET |
+| `2` | Peritumoral edema, ED |
+| `4` | Enhancing tumor, ET |
+
+Label `3` is not used in this BraTS annotation scheme. The model trains internally with contiguous classes `0,1,2,3`; internal class `3` is mapped back to stored BraTS label `4` for output artifacts.
+
+### Composite Regions
+
+Metrics use the standard composite regions:
+
+| Region | Definition |
+|---|---|
+| Whole Tumor, WT | Labels `1 + 2 + 4` |
+| Tumor Core, TC | Labels `1 + 4` |
+| Enhancing Tumor, ET | Label `4` |
+
+Dice and HD95 are reported independently for WT, TC, and ET. This keeps performance on the small enhancing region visible instead of hiding it inside one aggregate score.
+
+### Validation and Preprocessing
+
+Before training, BrainSeg validates:
+
+- Expected cohort and file counts
+- SHA-256 checksums
+- Subject/modality parsing
+- NIfTI readability
+- Volume shape, spacing, and affine
+- Valid label values
+- Subject-level split disjointness
+
+Preprocessing then:
+
+1. Builds a combined nonzero foreground mask across modalities.
+2. Applies per-modality foreground z-score normalization.
+3. Crops images and labels to a shared foreground box with margin.
+4. Stores compressed content-addressed subject caches.
+5. Samples foreground-biased 3D patches for training.
+6. Reconstructs complete predictions with sliding-window inference.
+
+Dataset artifacts:
+
+```text
+artifacts/data_manifest.json
+artifacts/dataset-validation.json
+artifacts/volume-verification.json
+artifacts/split_manifest.json
+artifacts/split-validation.json
+```
+
+Dataset visualization outputs:
+
+```text
+artifacts/dataset-visualization/split-composition.png
+artifacts/dataset-visualization/label-distribution.png
+artifacts/dataset-visualization/intensity-distributions.png
+artifacts/dataset-visualization/sample-*.png
+```
+
+Generate them with:
+
+```powershell
+python scripts/visualize_dataset.py `
+  artifacts/data_manifest.json `
+  artifacts/split_manifest.json `
+  --output-dir artifacts/dataset-visualization `
+  --subjects 6 `
+  --seed 42
+```
+
+### Citations and Use
+
+Public results using BraTS should cite:
+
+- Menze et al. (2015), “The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS),” IEEE Transactions on Medical Imaging.
+- Bakas et al. (2017), “Advancing The Cancer Genome Atlas glioma MRI collections,” Scientific Data.
+- Bakas et al. (2018), “Identifying the Best Machine Learning Algorithms for Brain Tumor Segmentation,” arXiv.
+
+The dataset is used here for research and portfolio engineering only. It does not establish clinical performance.
+
 ## Canonical Model
 
 The deployed/reference model is the trained high-memory Attention U-Net:
@@ -156,19 +291,19 @@ The training curve contains loss, validation loss, epoch duration, and peak GPU 
 
 Canonical model training chart:
 
-![Attention U-Net training curves](artifacts/full-training-high-memory/training-curves.png)
+![Attention U-Net training curves](artifacts/attention-UNet/training-curves.png)
 
 Canonical split previews:
 
-![Training split prediction](artifacts/full-training-high-memory/prediction-previews/train-BraTS20_Training_001.png)
+![Training split prediction](artifacts/attention-UNet/prediction-previews/train-BraTS20_Training_001.png)
 
-![Validation split prediction](artifacts/full-training-high-memory/prediction-previews/validation-BraTS20_Training_024.png)
+![Validation split prediction](artifacts/attention-UNet/prediction-previews/validation-BraTS20_Training_024.png)
 
-![Test split prediction](artifacts/full-training-high-memory/prediction-previews/test-BraTS20_Training_004.png)
+![Test split prediction](artifacts/attention-UNet/prediction-previews/test-BraTS20_Training_004.png)
 
 Baseline model training chart, when the comparison artifacts are restored:
 
-![Baseline U-Net training curves](artifacts/full-training-baseline/training-curves.png)
+![Baseline U-Net training curves](artifacts/3D-UNet/training-curves.png)
 
 The JSON training result is the authoritative source for exact values:
 

@@ -139,7 +139,7 @@ Secondary model: baseline 3D U-Net configuration is tracked in `artifacts/baseli
 
 | ID | Status | Task | Depends on | Proof of work |
 |---|---|---|---|---|
-| BRATS-060 | DONE | Add unit, integration, data, pipeline, and API test suites. | All implementation phases | Full project suite passed: 66 tests, 0 failures; GitHub Actions CI added for tests, lint, API type checks, release contracts, and Compose builds |
+| BRATS-060 | DONE | Add unit, integration, data, pipeline, and API test suites. | All implementation phases | Full project suite passed: 66 tests, 0 failures; GitHub Actions CI installs Celery, Optuna, NIfTI, SimpleITK, and test dependencies explicitly |
 | BRATS-061 | DONE | Validate clean-environment Docker Compose startup. | BRATS-005 | Compose services healthy; CPU API dependencies, artifact/cache mounts, CORS, `/analytics/model` HTTP 200, and `/viewer/subjects` HTTP 200 verified |
 | BRATS-062 | DONE | Validate complete pipeline execution from a single trigger. | BRATS-051 | Run `962b85524c6a4ee384ff8fdda21a52c5` submitted 3 ordered stages; all completed in PostgreSQL |
 | BRATS-063 | DONE | Validate idempotent rerun behavior and changed-input invalidation. | BRATS-050 | Probe verified first execution accepted, identical payload skipped by content hash, and changed payload re-executed with a new hash |
