@@ -1,0 +1,1030 @@
+{
+  "status": "completed",
+  "subjects_evaluated": 55,
+  "subject_results": [
+    {
+      "subject_id": "BraTS20_Training_004",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9279878082367846,
+          "hd95": 3.0
+        },
+        "tumor_core": {
+          "dice": 0.8485114130618024,
+          "hd95": 4.358898943540674
+        },
+        "enhancing_tumor": {
+          "dice": 0.8005857150604696,
+          "hd95": 3.4641016151377544
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_013",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8598360818400111,
+          "hd95": 9.28965475915156
+        },
+        "tumor_core": {
+          "dice": 0.8910714874262549,
+          "hd95": 2.0
+        },
+        "enhancing_tumor": {
+          "dice": 0.6504835208209986,
+          "hd95": 1.7320508075688772
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_014",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8462754978958372,
+          "hd95": 6.4031242374328485
+        },
+        "tumor_core": {
+          "dice": 0.8451209447019237,
+          "hd95": 6.6332495807108
+        },
+        "enhancing_tumor": {
+          "dice": 0.7779851595575181,
+          "hd95": 2.449489742783178
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_016",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.896692432612862,
+          "hd95": 3.7416573867739413
+        },
+        "tumor_core": {
+          "dice": 0.6859560699396429,
+          "hd95": 15.297058540778355
+        },
+        "enhancing_tumor": {
+          "dice": 0.6310795357777184,
+          "hd95": 4.69041575982343
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_017",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.888895965933131,
+          "hd95": 3.7416573867739413
+        },
+        "tumor_core": {
+          "dice": 0.7514201136090888,
+          "hd95": 14.796957310612969
+        },
+        "enhancing_tumor": {
+          "dice": 0.6704797920113449,
+          "hd95": 13.152946437965905
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_023",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8320325670258862,
+          "hd95": 26.87842842057273
+        },
+        "tumor_core": {
+          "dice": 0.8098259845610363,
+          "hd95": 6.082762530298219
+        },
+        "enhancing_tumor": {
+          "dice": 0.7969041402461768,
+          "hd95": 2.0
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_041",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.901794045588891,
+          "hd95": 41.048751503547585
+        },
+        "tumor_core": {
+          "dice": 0.8014025544623097,
+          "hd95": 70.50248171225778
+        },
+        "enhancing_tumor": {
+          "dice": 0.6558879981935193,
+          "hd95": 25.079872407968907
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_045",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9235429267143194,
+          "hd95": 3.0
+        },
+        "tumor_core": {
+          "dice": 0.9081802712137957,
+          "hd95": 5.196152422706632
+        },
+        "enhancing_tumor": {
+          "dice": 0.8582777503530141,
+          "hd95": 2.23606797749979
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_048",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.6226780667294737,
+          "hd95": 56.48008290507317
+        },
+        "tumor_core": {
+          "dice": 0.4178785286569718,
+          "hd95": 96.66488361723621
+        },
+        "enhancing_tumor": {
+          "dice": 0.3324291742013261,
+          "hd95": 99.57019303301757
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_050",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8858257890318335,
+          "hd95": 19.209372712298546
+        },
+        "tumor_core": {
+          "dice": 0.7235224741187263,
+          "hd95": 12.206555615733702
+        },
+        "enhancing_tumor": {
+          "dice": 0.768040943986352,
+          "hd95": 2.8284271247461903
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_053",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9412985859957437,
+          "hd95": 4.123105625617661
+        },
+        "tumor_core": {
+          "dice": 0.7399548013942621,
+          "hd95": 18.25920216881029
+        },
+        "enhancing_tumor": {
+          "dice": 0.6799162383399961,
+          "hd95": 8.360602625098466
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_058",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.7469674156984176,
+          "hd95": 7.615773105863909
+        },
+        "tumor_core": {
+          "dice": 0.3288177339901478,
+          "hd95": 35.45419580247167
+        },
+        "enhancing_tumor": {
+          "dice": 0.5104702644489649,
+          "hd95": 35.04711054088418
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_064",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8163380866545238,
+          "hd95": 35.369478367654786
+        },
+        "tumor_core": {
+          "dice": 0.7722876736416389,
+          "hd95": 7.54983443527075
+        },
+        "enhancing_tumor": {
+          "dice": 0.754890316672152,
+          "hd95": 2.449489742783178
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_072",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.7621991177707573,
+          "hd95": 10.295630140987
+        },
+        "tumor_core": {
+          "dice": 0.9330425995851725,
+          "hd95": 2.449489742783178
+        },
+        "enhancing_tumor": {
+          "dice": 0.8619052587646077,
+          "hd95": 2.8284271247461903
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_080",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8112293535145231,
+          "hd95": 46.63903825825704
+        },
+        "tumor_core": {
+          "dice": 0.7565932361154204,
+          "hd95": 6.324555320336759
+        },
+        "enhancing_tumor": {
+          "dice": 0.7350345814452659,
+          "hd95": 6.0
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_082",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.4356146688036744,
+          "hd95": 31.37674196783334
+        },
+        "tumor_core": {
+          "dice": 0.7819600328497126,
+          "hd95": 30.417914847536064
+        },
+        "enhancing_tumor": {
+          "dice": 0.7421574580044525,
+          "hd95": 27.77948585971813
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_102",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8486264460941327,
+          "hd95": 61.80938395604809
+        },
+        "tumor_core": {
+          "dice": 0.6761822730814979,
+          "hd95": 48.176757881783615
+        },
+        "enhancing_tumor": {
+          "dice": 0.6604165175695985,
+          "hd95": 8.06225774829855
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_111",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.832892752942098,
+          "hd95": 40.043724640756466
+        },
+        "tumor_core": {
+          "dice": 0.8548992707054661,
+          "hd95": 48.46648326421054
+        },
+        "enhancing_tumor": {
+          "dice": 0.7830848651517345,
+          "hd95": 45.83830259545242
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_112",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9492884937654443,
+          "hd95": 2.0
+        },
+        "tumor_core": {
+          "dice": 0.9400305872900647,
+          "hd95": 5.830951894845301
+        },
+        "enhancing_tumor": {
+          "dice": 0.9210259871751603,
+          "hd95": 1.4142135623730951
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_113",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9483413570749548,
+          "hd95": 10.344080432788601
+        },
+        "tumor_core": {
+          "dice": 0.31446993120970257,
+          "hd95": 15.658858102270441
+        },
+        "enhancing_tumor": {
+          "dice": 0.5706281952517683,
+          "hd95": 17.947142675994854
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_115",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9288778384838655,
+          "hd95": 11.19808756790885
+        },
+        "tumor_core": {
+          "dice": 0.8818858893784527,
+          "hd95": 8.873267441960467
+        },
+        "enhancing_tumor": {
+          "dice": 0.8653101370873547,
+          "hd95": 4.47213595499958
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_120",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9131727701807735,
+          "hd95": 49.54190079949371
+        },
+        "tumor_core": {
+          "dice": 0.9245286540974426,
+          "hd95": 2.8284271247461903
+        },
+        "enhancing_tumor": {
+          "dice": 0.8065207682000893,
+          "hd95": 1.7320508075688772
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_126",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8233310122726086,
+          "hd95": 9.407406325851731
+        },
+        "tumor_core": {
+          "dice": 0.8506785326869009,
+          "hd95": 15.165750888103101
+        },
+        "enhancing_tumor": {
+          "dice": 0.8238206793738686,
+          "hd95": 9.273618495495704
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_136",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8151101605489969,
+          "hd95": 7.0
+        },
+        "tumor_core": {
+          "dice": 0.7940639269406393,
+          "hd95": 10.04987562112089
+        },
+        "enhancing_tumor": {
+          "dice": 0.7612319983180911,
+          "hd95": 5.916079783099616
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_141",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.6151434299582448,
+          "hd95": 109.14669028422254
+        },
+        "tumor_core": {
+          "dice": 0.39607385957654845,
+          "hd95": 110.10721973741701
+        },
+        "enhancing_tumor": {
+          "dice": 0.06790367153572839,
+          "hd95": 123.80549246608248
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_143",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8774898189427128,
+          "hd95": 63.15853069855251
+        },
+        "tumor_core": {
+          "dice": 0.8479700444150529,
+          "hd95": 9.219544457292887
+        },
+        "enhancing_tumor": {
+          "dice": 0.6925852852397093,
+          "hd95": 4.123105625617661
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_151",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9190076346084421,
+          "hd95": 45.222779314103526
+        },
+        "tumor_core": {
+          "dice": 0.8715017078433402,
+          "hd95": 28.79148106933818
+        },
+        "enhancing_tumor": {
+          "dice": 0.8703580050336432,
+          "hd95": 2.23606797749979
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_173",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8431882085796027,
+          "hd95": 50.38352832178415
+        },
+        "tumor_core": {
+          "dice": 0.6912900959962538,
+          "hd95": 85.11932796230315
+        },
+        "enhancing_tumor": {
+          "dice": 0.7839811195515893,
+          "hd95": 7.3484692283495345
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_175",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9064466903079705,
+          "hd95": 7.874007874011811
+        },
+        "tumor_core": {
+          "dice": 0.9236574993213645,
+          "hd95": 4.242640687119285
+        },
+        "enhancing_tumor": {
+          "dice": 0.9009872694206288,
+          "hd95": 2.449489742783178
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_177",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.5948508132920867,
+          "hd95": 57.56735185849702
+        },
+        "tumor_core": {
+          "dice": 0.22695633832524784,
+          "hd95": 74.27650919835129
+        },
+        "enhancing_tumor": {
+          "dice": 0.05846702317290552,
+          "hd95": 76.32889232112866
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_184",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8932997055685619,
+          "hd95": 4.358898943540674
+        },
+        "tumor_core": {
+          "dice": 0.7535549399815328,
+          "hd95": 12.36931687685298
+        },
+        "enhancing_tumor": {
+          "dice": 0.8962713068181818,
+          "hd95": 1.4142135623730951
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_186",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9282913799844342,
+          "hd95": 2.8284271247461903
+        },
+        "tumor_core": {
+          "dice": 0.9554988590530561,
+          "hd95": 2.0
+        },
+        "enhancing_tumor": {
+          "dice": 0.936750998668442,
+          "hd95": 1.0
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_194",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.905896490283015,
+          "hd95": 22.41314009455541
+        },
+        "tumor_core": {
+          "dice": 0.9511960267585647,
+          "hd95": 6.557438524302
+        },
+        "enhancing_tumor": {
+          "dice": 0.8874659506074024,
+          "hd95": 1.4142135623730951
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_195",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8427653144595273,
+          "hd95": 5.0
+        },
+        "tumor_core": {
+          "dice": 0.7800434299030772,
+          "hd95": 6.164414002968976
+        },
+        "enhancing_tumor": {
+          "dice": 0.7636937910398138,
+          "hd95": 4.898979485566356
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_215",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8806846095627581,
+          "hd95": 3.0
+        },
+        "tumor_core": {
+          "dice": 0.8791892663431344,
+          "hd95": 3.7416573867739413
+        },
+        "enhancing_tumor": {
+          "dice": 0.856641218362234,
+          "hd95": 1.7320508075688772
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_217",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.6938951702611612,
+          "hd95": 66.18118979831213
+        },
+        "tumor_core": {
+          "dice": 0.7514912047414611,
+          "hd95": 83.6053202028693
+        },
+        "enhancing_tumor": {
+          "dice": 0.8192375233671331,
+          "hd95": 82.67829214684777
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_230",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9409853817000542,
+          "hd95": 2.23606797749979
+        },
+        "tumor_core": {
+          "dice": 0.8887427820021725,
+          "hd95": 2.8284271247461903
+        },
+        "enhancing_tumor": {
+          "dice": 0.9571944630926121,
+          "hd95": 1.0
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_236",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.7957169584391287,
+          "hd95": 7.14142842854285
+        },
+        "tumor_core": {
+          "dice": 0.40665815901903124,
+          "hd95": 10.44030650891055
+        },
+        "enhancing_tumor": {
+          "dice": 0.4249890142082906,
+          "hd95": 7.681145747868608
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_259",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.7941668691583987,
+          "hd95": 84.3682404699778
+        },
+        "tumor_core": {
+          "dice": 0.20161336554604645,
+          "hd95": 96.15092303249095
+        },
+        "enhancing_tumor": {
+          "dice": 0.27226069246435847,
+          "hd95": 96.26006440887103
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_275",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.3534184036223478,
+          "hd95": 67.83067152844649
+        },
+        "tumor_core": {
+          "dice": 0.1756637946193072,
+          "hd95": 64.1404708432983
+        },
+        "enhancing_tumor": {
+          "dice": 0.0,
+          "hd95": Infinity
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_280",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.6645050347771779,
+          "hd95": 99.16450951900268
+        },
+        "tumor_core": {
+          "dice": 0.10115065560610115,
+          "hd95": 71.36725847802266
+        },
+        "enhancing_tumor": {
+          "dice": 0.44411027568922307,
+          "hd95": 83.14564820613282
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_283",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8857097282316113,
+          "hd95": 31.827660925679098
+        },
+        "tumor_core": {
+          "dice": 0.5868641253818568,
+          "hd95": 46.55749054840907
+        },
+        "enhancing_tumor": {
+          "dice": 0.7134784531472655,
+          "hd95": 11.445523142259598
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_288",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.7646253422952453,
+          "hd95": 88.62223195753442
+        },
+        "tumor_core": {
+          "dice": 0.678343949044586,
+          "hd95": 10.198039027185569
+        },
+        "enhancing_tumor": {
+          "dice": 0.855892837852436,
+          "hd95": 1.4142135623730951
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_302",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8968451138778079,
+          "hd95": 4.358898943540674
+        },
+        "tumor_core": {
+          "dice": 0.7868565894219639,
+          "hd95": 5.477225575051661
+        },
+        "enhancing_tumor": {
+          "dice": 0.6292036686562819,
+          "hd95": 22.447714929731863
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_303",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.7607629956802408,
+          "hd95": 96.88653157173086
+        },
+        "tumor_core": {
+          "dice": 0.5822573442323749,
+          "hd95": 100.66876373096017
+        },
+        "enhancing_tumor": {
+          "dice": 0.2914207898320472,
+          "hd95": 117.4972283541757
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_309",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8756413818327606,
+          "hd95": 9.219544457292887
+        },
+        "tumor_core": {
+          "dice": 0.6862764472660351,
+          "hd95": 10.04987562112089
+        },
+        "enhancing_tumor": {
+          "dice": 0.45747342088805504,
+          "hd95": 13.490737563232042
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_310",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.882830116195556,
+          "hd95": 68.00735254367721
+        },
+        "tumor_core": {
+          "dice": 0.7570247227504862,
+          "hd95": 84.17244204607586
+        },
+        "enhancing_tumor": {
+          "dice": 0.0,
+          "hd95": Infinity
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_328",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8624482277658884,
+          "hd95": 10.862780491200215
+        },
+        "tumor_core": {
+          "dice": 0.33807753386268097,
+          "hd95": 14.491376746189438
+        },
+        "enhancing_tumor": {
+          "dice": 0.07221789883268483,
+          "hd95": 56.77719460527456
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_333",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9411310611403914,
+          "hd95": 3.605551275463989
+        },
+        "tumor_core": {
+          "dice": 0.44640428921092506,
+          "hd95": 22.178797095580048
+        },
+        "enhancing_tumor": {
+          "dice": 0.42741015402167715,
+          "hd95": 36.61966684720111
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_340",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.616470399422232,
+          "hd95": 44.553338819890925
+        },
+        "tumor_core": {
+          "dice": 0.8175971135556993,
+          "hd95": 63.03967004989794
+        },
+        "enhancing_tumor": {
+          "dice": 0.8209577176340079,
+          "hd95": 62.03708555702394
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_347",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9521507018441961,
+          "hd95": 2.23606797749979
+        },
+        "tumor_core": {
+          "dice": 0.8543699746298509,
+          "hd95": 24.469354227021856
+        },
+        "enhancing_tumor": {
+          "dice": 0.9168472113043311,
+          "hd95": 1.7320508075688772
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_354",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8366609234022632,
+          "hd95": 26.987958832201628
+        },
+        "tumor_core": {
+          "dice": 0.651931330472103,
+          "hd95": 9.899494936611665
+        },
+        "enhancing_tumor": {
+          "dice": 0.73357516313379,
+          "hd95": 6.4031242374328485
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_357",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.7154333821000488,
+          "hd95": 65.06150935845248
+        },
+        "tumor_core": {
+          "dice": 0.704062569266331,
+          "hd95": 71.17583859709698
+        },
+        "enhancing_tumor": {
+          "dice": 0.5924707153557133,
+          "hd95": 70.66116330771806
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_360",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.8347871560655484,
+          "hd95": 21.047565179849187
+        },
+        "tumor_core": {
+          "dice": 0.9469395708048074,
+          "hd95": 3.4641016151377544
+        },
+        "enhancing_tumor": {
+          "dice": 0.909686948377103,
+          "hd95": 1.4142135623730951
+        }
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_362",
+      "metrics": {
+        "whole_tumor": {
+          "dice": 0.9590906923138065,
+          "hd95": 2.23606797749979
+        },
+        "tumor_core": {
+          "dice": 0.8816454624073893,
+          "hd95": 5.0990195135927845
+        },
+        "enhancing_tumor": {
+          "dice": 0.8676845803443808,
+          "hd95": 2.0
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "whole_tumor": {
+      "dice": {
+        "mean": 0.8253306977651412,
+        "std": 0.12474803162592317,
+        "valid_count": 55,
+        "non_finite_count": 0
+      },
+      "hd95": {
+        "mean": 30.4171927826908,
+        "std": 29.855434341433313,
+        "valid_count": 55,
+        "non_finite_count": 0
+      }
+    },
+    "tumor_core": {
+      "dice": {
+        "mean": 0.7046034188377539,
+        "std": 0.2233123415750788,
+        "valid_count": 55,
+        "non_finite_count": 0
+      },
+      "hd95": {
+        "mean": 29.660151095147523,
+        "std": 32.01585226340104,
+        "valid_count": 55,
+        "non_finite_count": 0
+      }
+    },
+    "enhancing_tumor": {
+      "dice": {
+        "mean": 0.6607233484302402,
+        "std": 0.25642313140513423,
+        "valid_count": 55,
+        "non_finite_count": 0
+      },
+      "hd95": {
+        "mean": 23.316613663933058,
+        "std": 33.40424293232768,
+        "valid_count": 53,
+        "non_finite_count": 2
+      }
+    }
+  },
+  "failure_cases": [
+    {
+      "subject_id": "BraTS20_Training_048",
+      "composite_dice": 0.45766192319592386
+    },
+    {
+      "subject_id": "BraTS20_Training_141",
+      "composite_dice": 0.35970698702350723
+    },
+    {
+      "subject_id": "BraTS20_Training_177",
+      "composite_dice": 0.29342472493008004
+    },
+    {
+      "subject_id": "BraTS20_Training_259",
+      "composite_dice": 0.42268030905626786
+    },
+    {
+      "subject_id": "BraTS20_Training_275",
+      "composite_dice": 0.1763607327472183
+    },
+    {
+      "subject_id": "BraTS20_Training_280",
+      "composite_dice": 0.4032553220241674
+    },
+    {
+      "subject_id": "BraTS20_Training_328",
+      "composite_dice": 0.4242478868204181
+    }
+  ],
+  "non_finite_hd95_cases": [
+    {
+      "subject_id": "BraTS20_Training_275",
+      "regions": [
+        "enhancing_tumor"
+      ]
+    },
+    {
+      "subject_id": "BraTS20_Training_310",
+      "regions": [
+        "enhancing_tumor"
+      ]
+    }
+  ],
+  "device": "cuda"
+}

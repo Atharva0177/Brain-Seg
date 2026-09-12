@@ -1,0 +1,127 @@
+{
+  "seed": 42,
+  "subjects": [
+    "BraTS20_Training_018",
+    "BraTS20_Training_083",
+    "BraTS20_Training_100",
+    "BraTS20_Training_165",
+    "BraTS20_Training_180",
+    "BraTS20_Training_202"
+  ],
+  "label_counts": {
+    "0": 52910378,
+    "1": 88978,
+    "2": 402130,
+    "4": 166514
+  },
+  "summaries": [
+    {
+      "subject_id": "BraTS20_Training_018",
+      "shape": [
+        240,
+        240,
+        155
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "label_voxels": {
+        "whole_tumor": 45118,
+        "tumor_core": 2036,
+        "enhancing_tumor": 1695
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_083",
+      "shape": [
+        240,
+        240,
+        155
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "label_voxels": {
+        "whole_tumor": 73658,
+        "tumor_core": 10558,
+        "enhancing_tumor": 7167
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_100",
+      "shape": [
+        240,
+        240,
+        155
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "label_voxels": {
+        "whole_tumor": 135252,
+        "tumor_core": 77199,
+        "enhancing_tumor": 30015
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_165",
+      "shape": [
+        240,
+        240,
+        155
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "label_voxels": {
+        "whole_tumor": 143759,
+        "tumor_core": 39933,
+        "enhancing_tumor": 35721
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_180",
+      "shape": [
+        240,
+        240,
+        155
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "label_voxels": {
+        "whole_tumor": 162623,
+        "tumor_core": 79535,
+        "enhancing_tumor": 63709
+      }
+    },
+    {
+      "subject_id": "BraTS20_Training_202",
+      "shape": [
+        240,
+        240,
+        155
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "label_voxels": {
+        "whole_tumor": 97212,
+        "tumor_core": 46231,
+        "enhancing_tumor": 28207
+      }
+    }
+  ]
+}

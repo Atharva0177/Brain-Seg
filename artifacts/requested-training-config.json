@@ -1,0 +1,6 @@
+{
+  "epochs": 12,
+  "patch_size": 96,
+  "batch_size": 2,
+  "learning_rate": 0.001
+}

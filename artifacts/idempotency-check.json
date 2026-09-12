@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "first": {
+    "status": "accepted",
+    "stage": "probe",
+    "payload": {
+      "input": "unchanged",
+      "version": 1
+    },
+    "content_hash": "ab8e4005c6124b79b9d1b76bafcb07933b2d9d951b196eaf26c05839167d420f"
+  },
+  "unchanged": {
+    "status": "skipped",
+    "stage": "probe",
+    "content_hash": "ab8e4005c6124b79b9d1b76bafcb07933b2d9d951b196eaf26c05839167d420f"
+  },
+  "changed": {
+    "status": "accepted",
+    "stage": "probe",
+    "payload": {
+      "input": "changed",
+      "version": 2
+    },
+    "content_hash": "ebf4b0fc682eb5f8c7753ac6d382c4155cb7b6430816153e1006ab737e607f29"
+  }
+}

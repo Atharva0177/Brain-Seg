@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "strict": true,
+  "checks": {
+    "training_subjects": true,
+    "validation_subjects": true,
+    "training_nifti_files": true,
+    "validation_nifti_files": true,
+    "csv_files": true,
+    "disjoint_subjects": true
+  },
+  "failures": [],
+  "observed": {
+    "training_subjects": 369,
+    "validation_subjects": 125,
+    "training_nifti_files": 1845,
+    "validation_nifti_files": 500,
+    "csv_files": 4
+  },
+  "expected": {
+    "training_subjects": 369,
+    "validation_subjects": 125,
+    "training_nifti_files": 1845,
+    "validation_nifti_files": 500,
+    "csv_files": 4
+  }
+}

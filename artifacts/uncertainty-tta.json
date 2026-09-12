@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "method": "flip-tta",
+  "results": [
+    {
+      "subject_id": "BraTS20_Training_275",
+      "tta_count": 7,
+      "variance_mean": 0.0007670472841709852,
+      "variance_max": 0.10652895271778107,
+      "entropy_mean": 0.27518051862716675,
+      "entropy_max": 1.383051872253418
+    },
+    {
+      "subject_id": "BraTS20_Training_310",
+      "tta_count": 7,
+      "variance_mean": 0.0005573095986619592,
+      "variance_max": 0.1148996353149414,
+      "entropy_mean": 0.26710647344589233,
+      "entropy_max": 1.3858166933059692
+    }
+  ],
+  "device": "cuda"
+}

@@ -1,0 +1,208 @@
+{
+  "status": "completed",
+  "run_id": "7ff4e580df7c4d92bb675fbea6993e3c",
+  "checkpoint": "artifacts\\attention-UNet\\best-model.pt",
+  "selected": {
+    "architecture": "attention_unet",
+    "channels": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "patch_size": 112,
+    "learning_rate": 0.0002051338263087451,
+    "dice_weight": 0.3279972601681013,
+    "cross_entropy_weight": 0.6720027398318986
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.9234278165377103,
+      "duration_seconds": 53.108999999999924,
+      "peak_memory_bytes": 10238583808.0,
+      "subjects": 259.0,
+      "samples_per_second": 4.876762883880328,
+      "validation_loss": 0.8290715564380993
+    },
+    {
+      "epoch": 2,
+      "loss": 0.7577034794367277,
+      "duration_seconds": 44.297000000000025,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.846897081066435,
+      "validation_loss": 0.7085090561346574
+    },
+    {
+      "epoch": 3,
+      "loss": 0.6513637716953571,
+      "duration_seconds": 44.25,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.853107344632768,
+      "validation_loss": 0.612436527555639
+    },
+    {
+      "epoch": 4,
+      "loss": 0.5633854040732751,
+      "duration_seconds": 44.48500000000013,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.822187254130589,
+      "validation_loss": 0.5372217557647011
+    },
+    {
+      "epoch": 5,
+      "loss": 0.4913397027896001,
+      "duration_seconds": 90.125,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 2.8737864077669903,
+      "validation_loss": 0.47062651894309304
+    },
+    {
+      "epoch": 6,
+      "loss": 0.4320565008200132,
+      "duration_seconds": 115.53099999999995,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 2.241822541136146,
+      "validation_loss": 0.42294483293186536
+    },
+    {
+      "epoch": 7,
+      "loss": 0.3837550667616037,
+      "duration_seconds": 47.266000000000076,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.479625946769339,
+      "validation_loss": 0.3831546908075159
+    },
+    {
+      "epoch": 8,
+      "loss": 0.34542264479857226,
+      "duration_seconds": 45.76500000000033,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.659346662296474,
+      "validation_loss": 0.34961309324611317
+    },
+    {
+      "epoch": 9,
+      "loss": 0.3120716406748845,
+      "duration_seconds": 43.36000000000058,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.973247232472245,
+      "validation_loss": 0.3284758960658854
+    },
+    {
+      "epoch": 10,
+      "loss": 0.27998032730359296,
+      "duration_seconds": 45.75,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.66120218579235,
+      "validation_loss": 0.2964309884743257
+    },
+    {
+      "epoch": 11,
+      "loss": 0.2540540257325539,
+      "duration_seconds": 46.17199999999957,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.609460278956996,
+      "validation_loss": 0.2805666885592721
+    },
+    {
+      "epoch": 12,
+      "loss": 0.2341167355959232,
+      "duration_seconds": 45.0630000000001,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.747509042895489,
+      "validation_loss": 0.265977084365758
+    },
+    {
+      "epoch": 13,
+      "loss": 0.21563293383671686,
+      "duration_seconds": 43.79600000000028,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.913782080555264,
+      "validation_loss": 0.2515412273732099
+    },
+    {
+      "epoch": 14,
+      "loss": 0.1996356292412831,
+      "duration_seconds": 44.03200000000015,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.882085755813933,
+      "validation_loss": 0.23636798831549558
+    },
+    {
+      "epoch": 15,
+      "loss": 0.18332497362907116,
+      "duration_seconds": 43.9380000000001,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.894669761937261,
+      "validation_loss": 0.24639095257629048
+    },
+    {
+      "epoch": 16,
+      "loss": 0.17549863916177016,
+      "duration_seconds": 43.92200000000048,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.896817084832138,
+      "validation_loss": 0.22442403693090784
+    },
+    {
+      "epoch": 17,
+      "loss": 0.1660916751393905,
+      "duration_seconds": 44.0630000000001,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.877947484283853,
+      "validation_loss": 0.21600169241428374
+    },
+    {
+      "epoch": 18,
+      "loss": 0.15557637489759005,
+      "duration_seconds": 44.0,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.886363636363637,
+      "validation_loss": 0.20745397833260623
+    },
+    {
+      "epoch": 19,
+      "loss": 0.1505142624561603,
+      "duration_seconds": 43.92199999999957,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.89681708483226,
+      "validation_loss": 0.19689671844244003
+    },
+    {
+      "epoch": 20,
+      "loss": 0.13697233028136768,
+      "duration_seconds": 40.71799999999985,
+      "peak_memory_bytes": 5611692032.0,
+      "subjects": 259.0,
+      "samples_per_second": 6.360823223144579,
+      "validation_loss": 0.1924274348399856
+    }
+  ],
+  "device": "cuda",
+  "channels": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "patch_size": 112
+}

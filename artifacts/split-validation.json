@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "checks": {
+    "all_subjects_are_labeled_training_subjects": true,
+    "full_subject_coverage": true,
+    "train_validation_disjoint": true,
+    "train_test_disjoint": true,
+    "validation_test_disjoint": true,
+    "deterministic_regeneration": true,
+    "recorded_counts_match": true
+  },
+  "failures": [],
+  "observed_counts": {
+    "expected_labeled_training": 369,
+    "train": 259,
+    "validation": 55,
+    "test": 55
+  }
+}

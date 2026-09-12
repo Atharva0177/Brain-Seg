@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "input_folder": "E:\\BrainSeg\\data\\raw\\BraTS2020_TrainingData\\MICCAI_BraTS2020_TrainingData\\BraTS20_Training_001",
+  "segmentation": "artifacts\\inference-training-001\\BraTS20_Training_001_segmentation.nii.gz",
+  "overlay": "artifacts\\inference-training-001\\BraTS20_Training_001_overlay.png",
+  "shape": [
+    240,
+    240,
+    155
+  ],
+  "labels_present": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "model_name": "brainseg-segmentation",
+  "model_version": "1",
+  "device": "cuda",
+  "latency_ms": 503.35199999972247,
+  "total_seconds": 1149.4816000003993
+}

@@ -1,0 +1,118 @@
+{
+  "status": "completed",
+  "run_id": "0f375dd6baf24196881d92f4b2f7b8a2",
+  "checkpoint": "artifacts\\3D-UNet\\best-model.pt",
+  "selected": {
+    "architecture": "unet",
+    "channels": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "patch_size": 112,
+    "learning_rate": 0.0002051338263087451,
+    "dice_weight": 0.3279972601681013,
+    "cross_entropy_weight": 0.6720027398318986
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.9110468818591191,
+      "duration_seconds": 48.125,
+      "peak_memory_bytes": 8313971712.0,
+      "subjects": 259.0,
+      "samples_per_second": 5.381818181818182,
+      "validation_loss": 0.7858809763734991
+    },
+    {
+      "epoch": 2,
+      "loss": 0.71273017846621,
+      "duration_seconds": 40.34400000000005,
+      "peak_memory_bytes": 4652598272.0,
+      "subjects": 259.0,
+      "samples_per_second": 6.419789807654166,
+      "validation_loss": 0.6731851729479703
+    },
+    {
+      "epoch": 3,
+      "loss": 0.61488157419058,
+      "duration_seconds": 40.57800000000043,
+      "peak_memory_bytes": 4651549696.0,
+      "subjects": 259.0,
+      "samples_per_second": 6.382768988121574,
+      "validation_loss": 0.5832467837767168
+    },
+    {
+      "epoch": 4,
+      "loss": 0.5382741208259876,
+      "duration_seconds": 40.0,
+      "peak_memory_bytes": 4651549696.0,
+      "subjects": 259.0,
+      "samples_per_second": 6.475,
+      "validation_loss": 0.5175579845905304
+    },
+    {
+      "epoch": 5,
+      "loss": 0.4781876958333529,
+      "duration_seconds": 40.76600000000053,
+      "peak_memory_bytes": 4651549696.0,
+      "subjects": 259.0,
+      "samples_per_second": 6.3533336604031945,
+      "validation_loss": 0.4612489348108118
+    },
+    {
+      "epoch": 6,
+      "loss": 0.42901405921349156,
+      "duration_seconds": 40.82799999999952,
+      "peak_memory_bytes": 4651549696.0,
+      "subjects": 259.0,
+      "samples_per_second": 6.34368570588819,
+      "validation_loss": 0.42377986528656697
+    },
+    {
+      "epoch": 7,
+      "loss": 0.383759187735044,
+      "duration_seconds": 40.65599999999995,
+      "peak_memory_bytes": 4651549696.0,
+      "subjects": 259.0,
+      "samples_per_second": 6.37052341597797,
+      "validation_loss": 0.38261508670720185
+    },
+    {
+      "epoch": 8,
+      "loss": 0.35084686554395234,
+      "duration_seconds": 40.53099999999995,
+      "peak_memory_bytes": 4651549696.0,
+      "subjects": 259.0,
+      "samples_per_second": 6.390170486787898,
+      "validation_loss": 0.3560777008533478
+    },
+    {
+      "epoch": 9,
+      "loss": 0.31525687804588903,
+      "duration_seconds": 40.64100000000053,
+      "peak_memory_bytes": 4651549696.0,
+      "subjects": 259.0,
+      "samples_per_second": 6.372874683201609,
+      "validation_loss": 0.3281841359355233
+    },
+    {
+      "epoch": 10,
+      "loss": 0.28656519880661596,
+      "duration_seconds": 40.23399999999947,
+      "peak_memory_bytes": 4651549696.0,
+      "subjects": 259.0,
+      "samples_per_second": 6.437341551921346,
+      "validation_loss": 0.30532568422230805
+    }
+  ],
+  "device": "cuda",
+  "channels": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "patch_size": 112
+}

@@ -1,0 +1,25 @@
+{
+  "project": "BrainSeg",
+  "status": "release-candidate",
+  "canonical_model": "artifacts/primary-model.json",
+  "checkpoint": "artifacts/full-training-high-memory/best-model.pt",
+  "training_result": "artifacts/full-training-high-memory/training-result.json",
+  "evaluation": "artifacts/evaluation/evaluation.json",
+  "failure_gallery": "artifacts/failure-gallery/gallery.json",
+  "uncertainty": "artifacts/uncertainty-tta.json",
+  "command_runbook": "docs/COMMANDS.md",
+  "demo_runbook": "docs/DEMO_RUNBOOK.md",
+  "dataset_manifest": "artifacts/data_manifest.json",
+  "split_manifest": "artifacts/split_manifest.json",
+  "split_validation": "artifacts/split-validation.json",
+  "dataset_validation": "artifacts/dataset-validation.json",
+  "volume_validation": "artifacts/volume-verification.json",
+  "sanity_gate": "artifacts/sanity-gate.json",
+  "model_selection": "artifacts/model-selection.json",
+  "mlflow_model": "brainseg-segmentation:1",
+  "postgres_model_lineage_id": "4e46e3058f7746e2d1c968dc16a0706fd798ded38740c9d822b378dbe4194db4",
+  "notes": [
+    "Generated model binaries and dataset artifacts are external to source control.",
+    "The project is research/portfolio infrastructure and not a clinical device."
+  ]
+}

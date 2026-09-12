@@ -1,0 +1,15 @@
+{
+  "status": "trained",
+  "model_name": "brainseg-unet-baseline",
+  "architecture": "unet",
+  "channels": [32, 64, 128, 256],
+  "patch_size": 112,
+  "input_modalities": ["t1", "t1ce", "t2", "flair"],
+  "stored_labels": [0, 1, 2, 4],
+  "model_classes": [0, 1, 2, 3],
+  "output_dir": "artifacts/full-training-baseline",
+  "comparison_target": "artifacts/full-training-high-memory",
+  "training_result": "artifacts/full-training-baseline/training-result.json",
+  "checkpoint": "artifacts/full-training-baseline/best-model.pt",
+  "mlflow_run_id": "0f375dd6baf24196881d92f4b2f7b8a2"
+}

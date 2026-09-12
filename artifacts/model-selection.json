@@ -1,0 +1,54 @@
+{
+  "status": "completed",
+  "config": {
+    "trial_count": 2,
+    "trial_epochs": 1,
+    "max_gpu_seconds": 600.0,
+    "seed": 42,
+    "patch_sizes": [32, 64],
+    "architectures": ["unet", "attention_unet"],
+    "device": "cuda"
+  },
+  "best_trial": {
+    "number": 0,
+    "value": 0.13975538810094199,
+    "params": {
+      "architecture": "attention_unet",
+      "patch_size": 32,
+      "learning_rate": 0.0002051338263087451,
+      "dice_weight": 0.3279972601681013,
+      "cross_entropy_weight": 0.6720027398318986
+    },
+    "run_id": "01ba926bc14943e7a341ee2811abc751"
+  },
+  "trials": [
+    {
+      "number": 0,
+      "params": {
+        "architecture": "attention_unet",
+        "patch_size": 32,
+        "learning_rate": 0.0002051338263087451,
+        "dice_weight": 0.3279972601681013,
+        "cross_entropy_weight": 0.6720027398318986
+      },
+      "metrics": {
+        "composite_dice": 0.13975538810094199
+      },
+      "run_id": "01ba926bc14943e7a341ee2811abc751"
+    },
+    {
+      "number": 1,
+      "params": {
+        "architecture": "attention_unet",
+        "patch_size": 64,
+        "learning_rate": 0.00010994335574766199,
+        "dice_weight": 0.7349549260809971,
+        "cross_entropy_weight": 0.2650450739190029
+      },
+      "metrics": {
+        "composite_dice": 0.11228988940517108
+      },
+      "run_id": "66b147f38e0c407f87ef06f0925da117"
+    }
+  ]
+}
